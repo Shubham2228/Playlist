@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My Playlist</title>
+  <meta name="description" content="My personal playlist, always playing.">
+  <meta property="og:title" content="My Playlist">
+  <meta property="og:description" content="My personal playlist, always playing.">
+  <meta property="og:image" content="https://YOURDOMAIN/opengraph.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <span id="online" hidden><i class="dot"></i><b id="count">0</b> online</span>
+    <nav>
+      <a href="YOUR_SPOTIFY_PLAYLIST_URL" target="_blank" rel="noopener">Spotify</a>
+      <a href="YOUR_YT_MUSIC_PLAYLIST_URL" target="_blank" rel="noopener">YT Music</a>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="stage">
+      <button id="fullscreen" class="fab" aria-label="Fullscreen">⤢</button>
+      <div class="carousel" id="carousel"></div>
+    </div>
+
+    <div class="control-bar">
+      <button id="prev" aria-label="Previous">⏮</button>
+      <button id="play" aria-label="Play">▶</button>
+      <button id="next" aria-label="Next">⏭</button>
+
+      <div class="divider"></div>
+
+      <img id="mini-cover" alt="">
+      <div class="now-playing">
+        <span id="title">Loading…</span>
+        <span id="artist"></span>
+      </div>
+
+      <button id="mute" aria-label="Mute">🔊</button>
+    </div>
+  </main>
+
+  <div id="yt"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
